@@ -1,6 +1,6 @@
 import React from 'react';
 import './ExperienceCards.css';
-import { FaClock, FaMapMarkerAlt, FaInfoCircle, FaShoppingCart } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaInfoCircle, FaShoppingCart } from 'react-icons/fa';
 import { FaCar } from "react-icons/fa";
 import { FaWalking } from "react-icons/fa";
 import { useNavigate, } from 'react-router-dom';

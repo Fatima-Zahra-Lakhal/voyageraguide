@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaHeart, FaShare, FaArrowLeft } from "react-icons/fa";
 import { useLocation, useNavigate } from 'react-router-dom';
-import { FaClock, FaMapMarkerAlt, FaInfoCircle, FaShoppingCart, FaRegCalendarAlt, FaRegLightbulb } from 'react-icons/fa';
+import {FaRegCalendarAlt, FaRegLightbulb } from 'react-icons/fa';
 import './ExperienceDetails.css';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Facilities from './Facilities';

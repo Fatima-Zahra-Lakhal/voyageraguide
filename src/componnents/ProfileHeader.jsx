@@ -45,11 +45,11 @@ const ProfileHeader = () => {
             </div>
             <nav className="categories-nav">
               <ul className="categories-list">
-                <li><a href="#" className="nav-link active">Experiences</a></li>
-                <li><a href="#" className="nav-link">Gifts</a></li>
-                <li><a href="#" className="nav-link">Shopping</a></li>
-                <li><a href="#" className="nav-link">Food</a></li>
-                <li><a href="#" className="nav-link">Night life</a></li>
+                <li><a href="" className="nav-link active">Experiences</a></li>
+                <li><a href="" className="nav-link">Gifts</a></li>
+                <li><a href="" className="nav-link">Shopping</a></li>
+                <li><a href="" className="nav-link">Food</a></li>
+                <li><a href="" className="nav-link">Night life</a></li>
               </ul>
             </nav>
             
