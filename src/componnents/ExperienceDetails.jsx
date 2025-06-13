@@ -139,7 +139,7 @@ const ExperienceDetails = () => {
         </div>
       </div>
       <Facilities/>
- <img src={maps} className='maps'/>
+ <img src={maps} className='maps' alt='map'/>
   <h4 style={{ paddingLeft: '20px' }}>HOW DOES IT WORK</h4>
 <div className="booking-container">
   <div style={{
