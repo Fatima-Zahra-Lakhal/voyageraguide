@@ -1,0 +1,44 @@
+.facilities-container {
+  margin: 20px 0;
+}
+
+.facilities-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.facilities-scroll {
+  display: flex;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  overflow-x: auto;
+  padding: 0 15px 10px;
+  gap: 15px;
+}
+
+.facility-card {
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.facility-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+    object-fit: cover;
+}
+
+.facility-name {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  word-wrap: break-word;
+}

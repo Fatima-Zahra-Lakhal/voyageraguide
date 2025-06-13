@@ -1,0 +1,200 @@
+.logos-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin-left: -2px;
+}
+
+.nav-logo {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: translateY(-5px);
+}
+
+/* Partie droite - Menu */
+.navbar-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Menu principal */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #e0115f;
+}
+
+.menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e0115f;
+  transition: width 0.3s ease;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+/* Animation de l'icône hamburger */
+.menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar-left {
+    position: static;
+    margin-right: auto;
+    margin-left: -4px;
+  }
+
+  .navbar-right {
+    position: static;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease;
+    z-index: 99;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .menu-item {
+    font-size: 18px;
+  }
+}
+/* Styles pour le cercle de notification */
+.notification-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e0115f; /* Rose vif pour matcher votre thème */
+  color: white;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 15px; /* Espacement avec l'icône menu */
+}
+
+/* Effet au survol */
+.notification-circle:hover {
+  background-color: #c01050;
+  transform: scale(1.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation de pulsation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.notification-circle.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Badge de notification (optionnel) */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .notification-circle {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  
+  .notification-badge {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
+}

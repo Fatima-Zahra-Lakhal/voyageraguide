@@ -1,0 +1,271 @@
+/* ExperienceDetails.css */
+
+.experience-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detail-header {
+  position: relative;
+  height: 350px;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 1px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+
+.detail-title {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.detail-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.detail-body {
+  padding: 25px;
+}
+
+.detail-highlight {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #2c3e50;
+}
+
+.detail-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+
+
+.icon {
+  margin-right: 10px;
+  color: #3498db;
+}
+
+.time-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.detail-description {
+  margin: 30px 0;
+}
+
+.detail-description h2 {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.detail-description p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+
+.action-icon {
+  margin-right: 8px;
+}
+
+.not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .detail-header {
+    height: 250px;
+  }
+  
+  .detail-title {
+    font-size: 2rem;
+  }
+  
+  .detail-info {
+    flex-direction: column;
+  }
+  
+  .time-info {
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+}
+
+.detail-highlight {
+  position: relative;
+  line-height: 1.6;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.read-more-btn svg {
+  font-size: 0.8em;
+}
+.info-section {
+  margin: 4px 0;
+  padding: 3px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0px 0;
+  user-select: none;
+}
+
+.section-header h4 {
+  margin: 0 0 0 8px;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-grow: 1;
+}
+
+.section-header svg:last-child {
+  margin-left: auto;
+  color: #7f8c8d;
+  font-size: 0.8em;
+}
+
+.section-icon {
+  color: #3498db;
+  font-size: 1rem;
+}
+
+.section-content {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 10px 5px 5px 25px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-content p {
+  margin: 5px 0;
+}
+
+.section-content ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.section-content li {
+  margin-bottom: 5px;
+}
+
+.closed-info {
+  color: #e74c3c;
+  font-weight: 500;
+}
+.detail-header {
+  position: relative;
+}
+
+.icon-button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.image-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.detail-title {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  z-index: 1;
+}

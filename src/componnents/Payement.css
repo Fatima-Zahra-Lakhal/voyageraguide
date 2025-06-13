@@ -1,0 +1,84 @@
+/* Styles pour la carte de paiement */
+.payment-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+  perspective: 1000px;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+}
+
+.card-logo {
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.card-number input,
+.card-details input,
+.card-holder input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px -5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.card-expiry{
+     width: 48%;
+     margin-right: 15px;
+
+} 
+
+.card-cvv {
+  width: 48%;
+margin-left: 15px;
+}
+
+.confirm-button {
+  background: #C2002F;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+  transition: background 0.2s;
+}
+
+.confirm-button:hover {
+  background: #a00025;
+}
+.card-logo {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-logo img {
+  height: 30px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+}

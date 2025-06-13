@@ -1,0 +1,160 @@
+.experiences-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  min-width: 0; /* Important pour le responsive */
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 60%; /* Ratio 3:2 = 60% hauteur par rapport à la largeur */
+  overflow: hidden;
+  border-radius: 12px; /* optionnel : coins arrondis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optionnel : ombre douce */
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;        /* ✅ très important pour bien afficher l'image */
+  background-position: center;   /* ✅ centre l’image */
+  background-repeat: no-repeat;  /* ✅ évite la répétition */
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: white; /* ou autre selon le fond */
+  background-blend-mode: darken; /* optionnel : améliore la lisibilité du titre */
+  background-color: rgba(0,0,0,0.3); /* effet foncé si nécessaire */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* améliore la lisibilité sur image */
+}
+
+
+.card-content {
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+
+.time-info {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.time {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 6px 8px;
+  font-size: 0.7rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: none; /* Suppression de la bordure */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.learn-more {
+   background: #3a86ff; /* Fond bleu */
+  color: white;
+ 
+}
+
+.buy {
+ background: rgba(58, 134, 255, 0.1); /* Fond transparent */
+  color: #3a86ff; /* Texte bleu */
+}
+
+/* Effets au survol */
+.learn-more:hover {
+  background: rgba(58, 134, 255, 0.1); /* Léger fond bleu au survol */
+}
+
+.buy:hover {
+  background: #2667cc; /* Bleu plus foncé au survol */
+}
+.maps {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* limite la largeur sur les grands écrans */
+}
+@media (max-width: 500px) {
+  .experiences-container {
+    gap: 6px;
+    padding: 6px;
+    margin-bottom: 3px;
+  }
+  
+  .card-content {
+    padding: 8px;
+    margin-top: 20px;
+  }
+  
+  .action-btn {
+    padding: 4px 6px;
+  }
+
+.maps {
+  width: 90%;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3%;
+}
+
+
+  
+  .experience-card {
+    flex: 0 0 calc(50% - 10px);
+    scroll-snap-align: start;
+    margin-right: 10px;
+  }
+}

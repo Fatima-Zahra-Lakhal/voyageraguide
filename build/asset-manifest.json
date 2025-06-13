@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7989b65.css",
+    "main.js": "/static/js/main.a7e4c70a.js",
+    "static/js/453.80efc53e.chunk.js": "/static/js/453.80efc53e.chunk.js",
+    "static/media/image.png": "/static/media/image.98575209eeb3bbd498c2.png",
+    "static/media/royal-air-maroc.png": "/static/media/royal-air-maroc.46a89f239d3393a6e133.png",
+    "static/media/maps.jpg": "/static/media/maps.e8d97465ac63c602ff2a.jpg",
+    "index.html": "/index.html",
+    "main.e7989b65.css.map": "/static/css/main.e7989b65.css.map",
+    "main.a7e4c70a.js.map": "/static/js/main.a7e4c70a.js.map",
+    "453.80efc53e.chunk.js.map": "/static/js/453.80efc53e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7989b65.css",
+    "static/js/main.a7e4c70a.js"
+  ]
+}

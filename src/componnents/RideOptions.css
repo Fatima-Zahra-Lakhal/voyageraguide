@@ -1,0 +1,112 @@
+.ride-options-container {
+  font-family: 'UberMove', sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+    margin-bottom: 50px;
+}
+.confirm-button {
+  background:  #C2002F;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 60px;
+
+  transition: all 0.3s;
+}
+
+.confirm-button:hover {
+  background:  #bf0b38;
+}
+
+.confirm-button.disabled {
+  background: rgba(194, 0, 47, 0.2);
+  cursor: not-allowed;
+}
+.rides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ride-card {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effet de sélection avec grille */
+.ride-card.selected {
+  background-color: #fdfbfb;
+  box-shadow: inset 0 0 0 1px #e0e0e0;
+}
+
+.ride-card.selected .ride-image-icon {
+  filter: grayscale(30%) brightness(0.9);
+}
+
+.ride-card.selected .ride-name,
+.ride-card.selected .ride-price {
+  color: #777;
+}
+
+.ride-card.selected .ride-time,
+.ride-card.selected .ride-eta {
+  color: #aaa;
+}
+
+.ride-icon {
+  margin-right: 15px;
+}
+
+.ride-image-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.ride-info {
+  flex-grow: 1;
+}
+
+.ride-name-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.ride-name {
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.ride-time {
+  font-size: 14px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.ride-eta {
+  color: #666;
+}
+
+.ride-price {
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
