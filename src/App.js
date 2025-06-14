@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navbar />} /> {/* Ajoutez un composant HomePage */}
+       <Route path="/" element={<ProfileHeader />} />
         <Route path="/booking" element={<BookingPage />} />
           <Route path="/ticket" element={<TicketPage />} />
           <Route path="/payment" element={<PaymentPage />} />
